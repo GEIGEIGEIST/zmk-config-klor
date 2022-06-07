@@ -1,0 +1,14 @@
+file_format: "1"
+id: klor
+name: Klor
+type: shield
+url: 
+requires: [pro_micro]
+exposes: 
+features:
+  - keys
+  - encoder
+  - oled
+siblings:
+  - klor_left
+  - klor_right

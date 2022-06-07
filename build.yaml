@@ -11,9 +11,11 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
----
+
 include:
   - board: nice_nano_v2
-    shield: kyria_rev2_left
+    shield: klor_left
   - board: nice_nano_v2
-    shield: kyria_rev2_right
+    shield: klor_right
+# - board: nice_nano_v2
+#    shield: settings_reset
