@@ -8,7 +8,6 @@ exposes:
 features:
   - keys
   - encoder
-  - oled
 siblings:
   - klor_left
   - klor_right
