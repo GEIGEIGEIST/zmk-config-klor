@@ -12,12 +12,10 @@ endif # LEFT
 
 if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
 
-config ZMK_SPLIT
-    default y
+    config ZMK_SPLIT
+        default y
 
-endif # LEFT RIGHT
 
- 
 if ZMK_DISPLAY
 
     config I2C
@@ -30,6 +28,8 @@ if ZMK_DISPLAY
         default y
 
 endif # ZMK_DISPLAY
+
+
 
 if LVGL
 
@@ -55,3 +55,4 @@ if LVGL
 endif # LVGL
 
 
+endif # LEFT RIGHT
