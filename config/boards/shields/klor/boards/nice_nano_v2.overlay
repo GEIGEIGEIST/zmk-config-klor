@@ -5,7 +5,7 @@
 	status = "okay";
 	mosi-pin = <6>;
 	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <5>;
+	sck-pin = <20>;
 	miso-pin = <7>;
 
 	led_strip: ws2812@0 {
