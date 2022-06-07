@@ -4,9 +4,10 @@ name: Klor
 type: shield
 url: 
 requires: [pro_micro]
-exposes: 
+exposes: [i2c_oled]
 features:
   - keys
+  - display
   - encoder
 siblings:
   - klor_left
