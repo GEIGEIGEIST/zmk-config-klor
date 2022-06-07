@@ -33,12 +33,12 @@
 		;
 };
 
-left_encoder: encoder_left {
+&left_encoder {
 	a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 	b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
 
-right_encoder: encoder_right {
+&right_encoder {
 	a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 	b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
