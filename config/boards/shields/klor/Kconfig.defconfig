@@ -1,4 +1,3 @@
-
 if SHIELD_KLOR_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -7,13 +6,16 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+endif # SHIELD_KLOR_LEFT
+
+
 
 if SHIELD_KLOR
 
 config ZMK_SPLIT
     default y
  
+
 if ZMK_DISPLAY
 
 config I2C
@@ -27,4 +29,6 @@ config SSD1306_REVERSE_MODE
 
 endif # ZMK_DISPLAY
 
-endif
+
+
+endif # SHIELD_KLOR
