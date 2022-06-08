@@ -1,3 +1,7 @@
+# Copyright (c) 2022 GEIST
+# SPDX-License-Identifier: MIT
+
+
 if SHIELD_KLOR_LEFT
 
     config ZMK_KEYBOARD_NAME
@@ -27,17 +31,13 @@ if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
 
     if ZMK_DISPLAY
 
-
         choice LVGL_THEME_DEFAULT_FONT_NORMAL
             default LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
-
         endchoice
 
         choice LVGL_THEME_DEFAULT_FONT_SMALL
             default LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
-
         endchoice
-    
 
         config I2C
             default y
