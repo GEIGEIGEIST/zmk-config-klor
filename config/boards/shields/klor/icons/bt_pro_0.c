@@ -77,7 +77,6 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_IMG_BT_PRO_0 uint8_t bt_pro_0_map[] = 
 };
 
 const lv_img_dsc_t bt_pro_0 = {
-  .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 128,
