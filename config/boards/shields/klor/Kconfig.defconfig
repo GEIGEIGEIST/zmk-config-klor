@@ -31,14 +31,6 @@ if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
 
     if ZMK_DISPLAY
 
-        choice LVGL_THEME_DEFAULT_FONT_NORMAL
-            default LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
-        endchoice
-
-        choice LVGL_THEME_DEFAULT_FONT_SMALL
-            default LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
-        endchoice
-
         config I2C
             default y
 
@@ -48,18 +40,16 @@ if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
         config SSD1306_REVERSE_MODE
             default y
 
-    endif # ZMK_DISPLAY
+        choice LVGL_THEME_DEFAULT_FONT_NORMAL
+            default LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
 
-    menuconfig CUSTOM_WIDGET_BATTERY_STATUS
-        bool "custom battery status widget"
+        endchoice
 
-    menuconfig CUSTOM_WIDGET_OUTPUT_STATUS
-        bool "custom output status widget"
+        choice LVGL_THEME_DEFAULT_FONT_SMALL
+            default LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
 
-    menuconfig CUSTOM_WIDGET_PROFILE_STATUS
-        bool "custom profile status widget"
+        endchoice
 
-    if LVGL
 
         config LVGL_HOR_RES_MAX
             default 128
@@ -79,8 +69,17 @@ if SHIELD_KLOR_LEFT || SHIELD_KLOR_RIGHT
         choice LVGL_COLOR_DEPTH
             default LVGL_COLOR_DEPTH_1
         endchoice
+        
 
-    endif # LVGL
+    endif # ZMK_DISPLAY
 
+    menuconfig CUSTOM_WIDGET_BATTERY_STATUS
+        bool "custom battery status widget"
+
+    menuconfig CUSTOM_WIDGET_OUTPUT_STATUS
+        bool "custom output status widget"
+
+    menuconfig CUSTOM_WIDGET_PROFILE_STATUS
+        bool "custom profile status widget"
 
 endif # LEFT RIGHT
