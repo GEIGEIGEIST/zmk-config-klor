@@ -13,7 +13,7 @@ KLOR is 42 keys column-staggered split keyboard. It supports a per key RGB matri
 
 ![KLOR layouts](/docs/images/klor-layouts.svg)
 
-Polydactyl is the default layout. If you choose one of the other layouts you can use the matching template in the default keymap.\
+Polydactyl is the default layout. If you choose one of the other layouts you can use the matching template in the default keymap.
 
 
 ## HOW TO USE
