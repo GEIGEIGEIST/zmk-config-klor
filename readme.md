@@ -28,3 +28,9 @@ Polydactyl is the default layout. If you choose one of the other layouts you can
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `klor_left-nice_nano_v2-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `klor_right-nice_nano_v2-zmk.uf2` file.
+
+
+## KNOWN ISSUES
+
+- The encoder on the secondary side doesn't work yet. This is a limitation of ZMK.
+- Need to add the code for the Pixart Paw3204 trackball.
