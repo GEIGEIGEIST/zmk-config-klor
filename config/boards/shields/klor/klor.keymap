@@ -60,22 +60,23 @@
 label= "BASE"                                                  ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │    Q    │    W    │    F    │    P    │    G    │                    │    J    │    L    │    U    │    Y    │    ;    │   
+             │    Q    │    W    │    E    │    R    │    T    │                    │    Y    │    U    │    I    │    O    │    P    │   
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │   TAB   │    A    │    R    │    S    │    T    │    D    │                    │    H    │    N    │    E    │    I    │    O    │    "    │
+   │   TAB   │    A    │    S    │    D    │    F    │    G    │                    │    H    │    J    │    K    │    L    │    ;    │    "    │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │   DEL   │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    K    │    M    │    ,    │    .    │    /    │    \    │
+   │   DEL   │    Z    │    X    │    C    │    V    │    B    ││  MUTE  ││PLY/PSE ││    N    │    M    │    ,    │    .    │    /    │    \    │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │  CTRL   │  LOWER  │  SPACE  │   ALT   ││ CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │  
+                                 │  CTRL   │  ALT    │  LOWER  │   SPACE ││ CMD/WIN │  ENTER  │  RAISE  │  BSPCE  │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-              &kp Q     &kp W     &kp F     &kp P     &kp G                          &kp J     &kp L     &kp U     &kp Y     &kp SEMI
-    &kp TAB   &kp A     &kp R     &kp S   &hm LSHFT T &kp D                          &kp H   &hm RSHFT N &kp E     &kp I     &kp O     &kp SQT
-    &kp DEL   &kp Z     &kp X     &kp C     &kp V     &kp B     &trans     &trans    &kp K     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp BSLH
-                                  &kp LCTRL &mo LOWER &kp SPACE &kp LALT   &kp LGUI  &kp RET   &mo RAISE &kp BSPC    
+              &kp Q     &kp W     &kp E     &kp R     &kp T                          &kp Y     &kp U     &kp I     &kp O     &kp P
+    &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G                          &kp H   &hm RSHFT J &kp K     &kp L     &kp SEMI     &kp SQT
+    &kp DEL &hm LSHFT Z &kp X     &kp C     &kp V     &kp B     &trans     &trans    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp BSLH
+                                  &kp LCTRL &kp LALT  &mo LOWER &kp SPACE  &kp LGUI  &kp RET   &mo RAISE &kp BSPC    
                         >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+          #  sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -86,22 +87,22 @@ label= "BASE"                                                  ;
 label= "LOWER"                                                 ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │    UP   │         │    {    │                    │    }    │    7    │    8    │    9    │    +    │
+             │   !     │         │         │         │    %    │                    │    ^    │         │         │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │   LEFT  │  DOWN   │  RIGHT  │    [    │                    │    ]    │    4    │    5    │    6    │    -    │         │
+   │         │   1     │         │         │         │    5    │                    │    6    │         │         │         │    0    │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │   P UP  │ C LOCK  │ P DOWN  │    (    ││        ││        ││    )    │    1    │    2    │    3    │    *    │         │
+   │         │         │         │         │ ADJUST  │         ││        ││        ││         │         │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │         │         │         │         ││         │         │    0    │         │  
+                                 │         │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
- bindings = <
- //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-    &ext_power EP_TOG   &trans    &kp UP    &trans    &kp LBRC                       &kp RBRC  &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_PLUS
-    &trans    &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp LBKT                       &kp RBKT  &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_MINUS &trans
-    &trans    &trans    &kp PG_UP &kp CAPS  &kp PG_DN &kp LPAR  &trans     &trans    &kp RPAR  &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_MULTIPLY &trans
-                                  &trans    &trans    &trans    &trans     &trans    &kp DELETE &kp KP_N0 &trans  
-                        >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+bindings = <
+        &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                     &kp CARET  &kp AMPS   &kp STAR  &kp CAPS  &kp BACKSPACE
+&trans  &kp N1     &kp N2  &kp N3    &kp N4    &kp N5                        &kp N6     &kp N7     &kp N8    &kp N9    &kp N0      &trans
+&trans  &krans     &trans  &trans    &trans    &mo ADJUST &trans     &trans  &trans     &trans     &trans    &trans    &trans      &trans
+                           &trans    &trans    &trans     &trans     &trans  &trans     &trans     &trans
+            >;
+
+           sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -112,22 +113,22 @@ label= "LOWER"                                                 ;
 label= "RAISE"                                                 ;
 // └───────────────────────────────────────────────────────────┘
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │         │         │                    │         │         │    Ü    │         │         │
+             │         │    _    │    +    │    =    │    :    │                    │    `    │         │         │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │    Ä    │         │    ß    │         │         │         │                    │         │         │         │         │    Ö    │         │
+   │         │         │         │         │         │         │                    │         │         │         │         │         │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │         │         │
+   │         │         │         │         │         │         ││        ││        ││    ~    │         │         │         │         │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
-                                 │ ADJUST  │         │         │         ││         │         │         │         │  
+                                 │         │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
- //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-              &trans    &trans    &trans    &trans    &trans                         &trans    &trans    &kp RA(U) &trans    &trans     
-    &kp RA(A) &trans    &kp RA(S) &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &kp RA(O) &trans  
-    &trans    &trans    &trans    &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    &trans    &trans    &trans
-                                  &mo ADJUST &trans   &trans    &trans     &trans    &trans    &trans    &trans  
-                        >;
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        &kp UNDER        &kp MINUS  &kp PLUS  &kp EQUAL  &kp COLON                        &kp GRAVE   &kp C_PREV  &kp STAR   &kp C_NEXT   &kp DEL
+&trans  &kp LBRC         &kp LPAR   &kp RPAR  &kp RBRC   &kp PIPE                         &kp CARET   &kp LEFT    &kp UP     &kp DOWN     &kp RIGHT     &trans
+&trans  &hm LSHIFT LBKT  &kp SQT    &kp DQT   &kp RBKT   &kp SEMI       &trans    &trans  &kp TILDE   &kp BSLH    &trans     &trans       &kp RSHIFT    &trans    
+                                    &trans    &trans     &trans         &trans    &trans  &trans      &trans      &trans
+            >;
+
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -140,20 +141,19 @@ label= "ADJUST"                                                ;
 /*           ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
              │         │         │         │         │         │                    │         │         │         │         │         │
    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-   │         │         │         │         │         │         │                    │         │         │         │         │         │         │
+   │         │   F1    │         │         │         │    F5   │                    │    F6   │         │         │         │   F10   │         │
    ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   │         │         │         │         │         │         ││        ││        ││         │         │         │         │         │         │
+   │         │   F11   │         │         │         │         ││        ││        ││         │         │         │         │   F12   │         │
    └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘
                                  │         │         │         │         ││         │         │         │         │  
                                  └─────────┴─────────┴─────────┴─────────┘└─────────┴─────────┴─────────┴─────────┘ */ 
  bindings = <
- //╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷╷         ╷         ╷         ╷         ╷         ╷         ╷         ╷
-             &bt BT_CLR &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &trans    &bt BT_CLR   
-    &trans   &bt BT_NXT &trans    &trans    &trans    &trans                         &trans    &trans    &trans    &bt BT_NXT &trans   &trans 
-    &trans   &bt BT_PRV &trans    &trans    &kp KP_N6 &trans    &trans     &trans    &bt BT_PRV &trans   &trans    &trans    &trans    &trans    
-                                  &trans    &trans    &trans    &trans     &trans    &trans    &trans    &trans    
-                        >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        &trans   &trans   &trans   &bt BT_SEL 0  &bt BT_SEL 1                                &bt BT_SEL 2  &bt BT_SEL 3  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4        &kp F5                                      &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp F11  &trans   &trans   &bt BT_CLR    &trans        &sys_reset       &bootloader  &bt BT_PRV    &bt BT_NXT    &trans  &trans  &kp F12  &trans
+                          &trans   &trans        &trans        &trans           &trans       &trans        &trans        &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
                 };
         };
 };
