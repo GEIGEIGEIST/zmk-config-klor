@@ -37,6 +37,7 @@
 	sensors {
 		compatible = "zmk,keymap-sensors";
 		sensors = <&left_encoder &right_encoder>;
+		triggers-per-rotation = <20>;
 	};
 
 	// TODO: RGB node(s)
@@ -56,5 +57,6 @@
 		display-offset = <0>;
 		multiplex-ratio = <63>;
 		prechargep = <0x22>;
+		inversion-on;
 	};
 };
