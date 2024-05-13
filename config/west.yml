@@ -1,11 +1,15 @@
 manifest:
   remotes:
+    - name: schadenn
+      url-base: https://github.com/schadenn
+    - name: MangoIV
+      url-base: https://github.com/MangoIV
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: schadenn
+      revision: zmkfirmware-main
       import: app/west.yml
   self:
     path: config
