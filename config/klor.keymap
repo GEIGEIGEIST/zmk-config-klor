@@ -98,8 +98,8 @@ label= "BASE"                                                  ;
 
  bindings = <
  //╷         ╷         ╷         ╷         ╷         ╷                       ╷           ╷╷         ╷            ╷             ╷         ╷          ╷          ╷         ╷
-              &kp Q     &kp W     &kp E     &kp R     &kp T                                &kp Z     &kp U        &kp I         &kp O     &kp P
-    &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G                                &kp H     &kp J        &kp K         &kp L     &quest     &kp BSPC
+              &kp Q     &kp W     &kp E     &kp R     &kp T                                          &kp Z        &kp U         &kp I     &kp O      &kp P
+    &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G                                          &kp H        &kp J         &kp K     &kp L      &quest     &kp BSPC
     &kp ESC   &kp Y     &kp X     &kp C     &kp V     &kp B                   &trans       &trans    &kp N        &kp M         &comma    &dot       &kp MINUS  &kp RET
                                   &kp LALT  &kp LSHFT &hm LC(LS(LALT)) SPACE  &kp LCTRL    &kp RGUI  &mo 1        &mo 2         &kp DEL     
                         >;
@@ -135,8 +135,8 @@ label= "NUMMERN"                                                 ;
  bindings = <
  //╷         ╷       ╷       ╷       ╷       ╷              ╷         ╷╷         ╷         ╷                 ╷       ╷                ╷         ╷         ╷
               &trans  &kp N7  &kp N8  &kp N9  &kp MINUS                           &trans    &rgb_ug RGB_EFF   &kp UP  &rgb_ug RGB_BRI  &trans         
-    &trans    &trans  &kp N4  &kp N5  &kp N6  &kp PLUS                            &kp LEFT  &kp DOWN          &kp UP  &kp RIGHT        &trans    &trans  
-    &trans    &kp N0  &kp N1  &kp N2  &kp N3  &mt COMMA DOT  &trans     &trans    &trans    &rgb_ug RGB_HUI   &trans  &rgb_ug RGB_BRD  &trans    &trans
+    &trans    &trans  &kp N4  &kp N5  &kp N6  &kp PLUS                            &kp LEFT  &kp DOWN          &kp UP  &kp RIGHT        &trans    &bt BT_CLR  
+    &trans    &kp N0  &kp N1  &kp N2  &kp N3  &mt COMMA DOT  &trans     &trans    &trans    &rgb_ug RGB_HUI   &trans  &rgb_ug RGB_BRD  &trans    &bt BT_NXT
                               &trans  &trans  &trans         &trans     &trans    &trans    &trans            &trans  
                         >;
             sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp LS(TAB) TAB>;
