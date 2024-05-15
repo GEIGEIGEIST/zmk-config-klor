@@ -135,8 +135,8 @@ label= "NUMMERN"                                                 ;
  bindings = <
  //╷         ╷       ╷       ╷       ╷       ╷              ╷         ╷╷         ╷         ╷                 ╷       ╷                ╷         ╷         ╷
               &trans  &kp N7  &kp N8  &kp N9  &kp MINUS                           &trans    &rgb_ug RGB_EFF   &kp UP  &rgb_ug RGB_BRI  &trans         
-    &trans    &trans  &kp N4  &kp N5  &kp N6  &kp PLUS                            &kp LEFT  &kp DOWN          &kp UP  &kp RIGHT        &trans    &bt BT_CLR  
-    &trans    &kp N0  &kp N1  &kp N2  &kp N3  &mt COMMA DOT  &trans     &trans    &trans    &rgb_ug RGB_HUI   &trans  &rgb_ug RGB_BRD  &trans    &bt BT_NXT
+    &trans    &trans  &kp N4  &kp N5  &kp N6  &kp PLUS                            &kp LEFT  &kp DOWN          &kp UP  &kp RIGHT        &trans    &bt BT_SEL 0  
+    &bt BT_CLR    &kp N0  &kp N1  &kp N2  &kp N3  &mt COMMA DOT  &trans     &trans    &trans    &rgb_ug RGB_HUI   &trans  &rgb_ug RGB_BRD  &trans    &bt BT_SEL 1
                               &trans  &trans  &trans         &trans     &trans    &trans    &trans            &trans  
                         >;
             sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp LS(TAB) TAB>;
