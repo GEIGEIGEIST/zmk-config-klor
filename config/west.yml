@@ -9,7 +9,8 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: a1e0607a22deb72ce4ac64e442f0baa721e32b0b
+      revision: main 
+      # a1e0607a22deb72ce4ac64e442f0baa721e32b0b
       import: app/west.yml
   self:
     path: config
